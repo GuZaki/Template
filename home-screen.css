@@ -1,0 +1,201 @@
+.section:nth-child(1) {
+    max-height: 782px;
+    padding-top: 50px;
+}
+
+.home-screen {
+    max-width: 1600px;
+    height: 732px;
+    padding: 40px 200px 120px;
+    background-image: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+                url("images/background-section-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+
+/*header*/
+.header {
+    margin: 0 auto 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height:68px;
+    width: 68px;
+}
+
+.header__header-link {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 210px;
+    justify-content: center;
+    gap: 3px;
+}
+
+.header-link-phone {
+    font-size: 1.2rem;
+    line-height: 28px;
+    display: block;
+}
+
+.header-link-callback {
+    font-size: 0.8rem;
+    line-height: 19px;
+    border-bottom: 1px var(--button-color) solid;
+}
+
+.home-screen-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 990px;
+}
+
+/*Заголовок*/
+.home-screen-items__title {
+    font-size: 2.6rem;
+    width: 100%;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+
+/*Текст*/
+.home-screen-items__text {
+    font-size: 1.1rem;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+    /*width: 960px;*/
+    margin: 0 auto 88px;
+}
+
+/*Кнопка*/
+.button {
+    background-color: var(--button-bg-color);
+    width: 200px;
+    height: 48px;
+    border-radius: 25px;
+    color: var(--button-color);
+    border: none;
+    align-self: center;
+}
+
+@media (max-width: 1024px) {
+    .home-screen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1024px;
+        height: 528px;
+        padding: 26px 30px 70px;
+        background-image: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+        url("images/background-section-1-2.png");
+    }
+
+    .header {
+        margin: 0 0 70px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .home-screen-items {
+        max-width: 780px;
+        margin: 0;
+    }
+
+    .logo {
+        height:60px;
+        width: 60px;
+    }
+
+    .home-screen-items__title {
+        font-size: 2rem;
+        line-height: 47px;
+        width: 100%;
+        margin: 0 0 27px;
+    }
+
+    .home-screen-items__text {
+        font-size: 0.9rem;
+        line-height: 25px;
+        width: 97%;
+        margin: 0 auto 59px;
+    }
+
+    .button {
+        width: 202px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .home-screen {
+        max-width: 320px;
+        height: 441px;
+        padding: 15px 15px 65px;
+        background-image: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+        url("images/stag-office-mockup.png");
+    }
+
+    .header {
+        margin: 0 0 65px;
+        width: 100%;
+    }
+
+    .home-screen-items {
+        max-width: 290px;
+    }
+
+    .logo {
+        height:30px;
+        width: 30px;
+    }
+
+    .home-screen-items__title {
+        font-size: 1rem;
+        line-height: 23px;
+        width: 100%;
+        margin: 0 0 23px;
+    }
+
+    .home-screen-items__text {
+        font-size: 0.7rem;
+        line-height: 19px;
+        width: 100%;
+        height: 77px;
+        overflow: hidden;
+        margin-bottom:54px;
+    }
+
+    .header__header-link {
+        justify-content: flex-end;
+    }
+
+      .header-link-phone {
+        display: none;
+    }
+
+    .header-link-callback:before {
+        content: url("images/Phone.svg");
+        background: no-repeat;
+    }
+
+    .header-link-callback {
+        width: 24px;
+        height: 24px;
+        border-bottom: none;
+        font-size: 0;
+    }
+
+    .button {
+        width: 160px;
+        height: 38px;
+        font-size: 0.8rem;
+    }
+}
