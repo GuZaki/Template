@@ -33,6 +33,7 @@
 @media (max-width: 1024px) {
     .footer {
         height: 146px;
+        margin-bottom: 0;
     }
 
     .footer-container {
@@ -82,6 +83,7 @@
         width: 100%;
         text-align: center;
         padding: 15px 80px 15px 79px;
+
     }
 
     .header-link-callback {
@@ -100,9 +102,17 @@
     }
 
     .logo {
-        margin-left: 15px;
-        margin-top: 25px;
         width: 30px;
         height: 30px;
+    }
+
+    #logo-footer {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+
+    #back:before {
+       right: -15px;
+        top: 10px;
     }
 }

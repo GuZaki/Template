@@ -1,9 +1,9 @@
 .section:nth-child(2) {
-    height: 565px;
+    height: 596px;
 }
 
 .advantages {
-    height: 565px;
+    height: 596px;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 1024px) {
+    .section:nth-child(2) {
+        height: 565px;
+    }
+
     .advantages {
         height: 565px;
         max-width: 1024px;
@@ -196,5 +200,4 @@
     .item:last-child {
         margin-bottom: 0;
     }
-
 }
